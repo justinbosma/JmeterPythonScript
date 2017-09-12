@@ -1,2 +1,2 @@
 # JmeterPythonScript
-Script for running jmeter tests and reading logs
+This was my quick fix for running jmeter tests on a remote server. I would schedule a cron job for 6 AM, and have the results emailed. The test runs in non-gui mode and a log file with the date appended to the end is created, the logs are then searched for any failures. If a failure is found, it will print the test name and where the test failed in the console. Finally, all logs older than 3 days are removed. The next idea is to look into running all tests in a directory as a test suite.
